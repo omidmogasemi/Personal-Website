@@ -1,7 +1,8 @@
 import React from "react";
+import ScrollContainer from "./Components/ScrollContainer";
 
 function App() {
-  return <div>Hi</div>;
+  return <ScrollContainer></ScrollContainer>;
 }
 
 export default App;
