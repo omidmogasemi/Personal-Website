@@ -19,6 +19,8 @@ import Grid from "@material-ui/core/Grid";
 // import Link from "@material-ui/core/Link";
 // import Scroll from "react-scroll";
 import { Link, animateScroll as scroll } from "react-scroll";
+import "bootstrap/dist/css/bootstrap.css";
+import "./ScrollContainer.css";
 
 // const ScrollLink = Scroll.ScrollLink;
 
@@ -27,6 +29,11 @@ const useStyles = makeStyles((theme) => ({
     position: "fixed",
     bottom: theme.spacing(2),
     right: theme.spacing(2),
+  },
+  navbarStyle: {
+    position: "fixed",
+    background: "transparent",
+    boxShadow: "none",
   },
 }));
 
@@ -59,10 +66,12 @@ function ScrollTop(props) {
 }
 
 export default function BackToTop(props) {
+  const classes = useStyles();
+
   return (
     <React.Fragment>
       <CssBaseline />
-      <AppBar>
+      <AppBar className={classes.navbarStyle}>
         <Toolbar>
           <Grid container xs={12}>
             <Grid container item xs={6}></Grid>
@@ -148,15 +157,63 @@ export default function BackToTop(props) {
           </Grid>
         </Toolbar>
       </AppBar>
+      {/* this next line normally separates the content beneath the navbar
+          i got rid of it so the gradient will expand to the navbar when it is made to be transparent */}
       <Toolbar id="back-to-top-anchor" />
-      <Container>
-        <Box my={2}>
-          <Home />
+      <div
+        style={{
+          background: "linear-gradient(to left, #C9D6FF, #E2E2E2)",
+        }}
+      >
+        <div class="container-fluid" style={{ border: "2px solid orange" }}>
+          <div class="row justify-content-center">
+            {/* <div class="col-auto" style={{ border: "2px solid red" }}></div> */}
+            <div class="col" style={{ border: "2px solid yellow" }}>
+              <Home />
+            </div>
+            {/* <div class="col-auto" style={{ border: "2px solid green" }}></div> */}
+          </div>
+        </div>
+      </div>
+      <div style={{ background: "linear-gradient(#e66465, #9198e5)" }}>
+        <div class="container-fluid" style={{ border: "2px solid orange" }}>
+          <div class="row justify-content-center">
+            <div class="col" style={{ border: "2px solid yellow" }}>
+              <About />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style={{ background: "linear-gradient(#e66465, #9198e5)" }}>
+        <div class="container-fluid" style={{ border: "2px solid orange" }}>
+          <div class="row justify-content-center">
+            <div class="col" style={{ border: "2px solid yellow" }}>
+              <Skills />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style={{ background: "linear-gradient(#e66465, #9198e5)" }}>
+        <div class="container-fluid" style={{ border: "2px solid orange" }}>
+          <div class="row justify-content-center">
+            <div class="col" style={{ border: "2px solid yellow" }}>
+              <Portfolio />
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* <Grid>
+        <Box>
+          <Grid container item xs={1}></Grid>
+          <Grid container item xs={10}>
+            <Home />
+          </Grid>
+          <Grid container item xs={1}></Grid>
           <About />
           <Skills />
           <Portfolio />
         </Box>
-      </Container>
+      </Grid> */}
       <ScrollTop {...props}>
         <Fab color="secondary" size="small" aria-label="scroll back to top">
           <KeyboardArrowUpIcon />
