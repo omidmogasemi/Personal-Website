@@ -1,8 +1,8 @@
 import React from "react";
-import ScrollContainer from "./Components/ScrollContainer";
+import Layout from "./Components/Layout"
 
 function App() {
-  return <ScrollContainer></ScrollContainer>;
+  return <Layout></Layout>;
 }
 
 export default App;
