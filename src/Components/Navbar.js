@@ -8,16 +8,18 @@ const NavBar = ({ }) => {
     return (
         <div className="navbarcontainer">
             <div className="navbar">
+                <Link activeClass="active" to="Home_section" spy={true} smooth={true} offset={-70}duration={500}>
+                    <Navitem name="Home" section_id="Home_section"></Navitem>
+                </Link>
                 <Link activeClass="active" to="About_section" spy={true} smooth={true} offset={-70}duration={500}>
                     <Navitem name="About" section_id="About_section"></Navitem>
                 </Link>
-                <Link activeClass="active" to="Skills_section" spy={true} smooth={true} offset={-70}duration={500}>
-                    <Navitem name="Skills" section_id="Skills_section"></Navitem>
-                </Link>
                 <Link activeClass="active" to="Experience_section" spy={true} smooth={true} offset={-70}duration={500}>
                     <Navitem name="Experience" section_id="Experience_section"></Navitem>
+                </Link>   
+                <Link activeClass="active" to="Projects_section" spy={true} smooth={true} offset={-70}duration={500}>
+                    <Navitem name="Projects" section_id="Connect_Modal"></Navitem>
                 </Link>
-                <Navitem name="Connect" section_id="Connect_Modal"></Navitem>
             </div>
         </div>
     );

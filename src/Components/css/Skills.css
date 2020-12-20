@@ -1,0 +1,22 @@
+.toptext {
+  margin-top: 2rem;
+  font-size: 48px;
+}
+
+.focusimage {
+  width: 100%;
+  height: auto;
+  color: black;
+  margin-bottom: 1rem;
+}
+
+.focustext {
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.favicon {
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+}

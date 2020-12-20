@@ -5,21 +5,18 @@
     font-weight: normal;
 }
 
-.navbar
-{
-    font-family: 'Arial';
-    position: relative;
-}
-
 .navbarcontainer
 {
-    margin: 2vh;
-    font-size: 18px;
     position: fixed;
-    top: 0;
     right: 0;
     z-index: 5;
-    background-color: none;
+}
+
+.navbar
+{
+    position: relative;
+    font-size: 18px;
+    font-family: 'Proxima Nova';
 }
 
 div.underline
@@ -43,11 +40,9 @@ div.underline.selected
 {
     display: inline-block;
     position: relative;
-    margin: 2vh;
-    margin-left: 1vh;
-    margin-right: 1vh;
+    margin: 1vh;
     text-align: center;
-    min-width: 100px;
+    min-width: 90px;
     width: fit-content;
 }
 

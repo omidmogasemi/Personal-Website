@@ -1,27 +1,25 @@
-@font-face
-{
-    src: url("../../static/fonts/ProximaNova-Regular.otf");
-    font-family: 'Proxima Nova';
-    font-weight: normal;
+@font-face {
+  src: url("../../static/fonts/ProximaNova-Regular.otf");
+  font-family: "Proxima Nova";
+  font-weight: normal;
 }
 
-@font-face
-{
-    src: url("../../static/fonts/Retrograde-Regular.otf");
-    font-family: 'Retrograde';
-    font-weight: normal;
+@font-face {
+  src: url("../../static/fonts/Retrograde-Regular.otf");
+  font-family: "Retrograde";
+  font-weight: normal;
 }
 
-.section
-{
-    background-color: gray;
-    font-family: 'Proxima Nova';
-    position: relative;
-    display: block;
-    width: 100%;
-    min-height: 100vh;
-    max-height: fit-content;
-    font-size: 50px;
-    font-weight: normal;
-    scroll-behavior: smooth;
+.section {
+  background: white;
+  font-family: "Proxima Nova";
+  position: relative;
+  display: block;
+  width: 100%;
+  min-height: 100vh;
+  max-height: fit-content;
+  font-size: 50px;
+  font-weight: normal;
+  scroll-behavior: smooth;
+  color: black;
 }

@@ -1,0 +1,21 @@
+@font-face
+{
+    src: url("../../static/fonts/Proxima\ Nova\ Semibold.otf");
+    font-family: 'Proxima Nova';
+    font-weight: normal;
+}
+
+.background {
+    min-height: 100vh;
+    font-family: 'Proxima Nova';
+}
+
+.header {
+    margin-top: 3rem;
+    font-size: 2rem;
+    color: #17255A;
+}
+
+.name {
+    font-size: 3rem;
+}
