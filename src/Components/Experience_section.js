@@ -4,10 +4,10 @@ import hackdavis from "../img/hackdavis.png";
 
 const ExperienceSection = (props) => {
   return (
-    <div className="container-fluid p-0">
+    <div className="container-fluid p-0 experiencebackground">
       <div className={`row no-gutters align-items-center`}>
-        <div className="col-10 offset-1 toptext" align="center">
-          Projects
+      <div className="col-10 offset-1" align="center">
+          <h1 className="header">Experience</h1>
         </div>
         <div className={`col-sm-10 offset-sm-1 col-md-6 offset-md-3`}>
           <div className={`row no-gutters align-items-center`}>

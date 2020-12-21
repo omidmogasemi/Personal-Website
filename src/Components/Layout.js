@@ -11,20 +11,22 @@ import ExperienceSection from "./Experience_section"
 function Layout() {
     return (
         <>
-            <NavBar />
-                <Section id="Home_section">
-                    <HomeSection />
-                </Section>
             <div class="container-fluid">
-                <Section id="About_section">
-                    <AboutSection />
-                </Section>
-                <Section id="Projects_section">
-                    <ProjectsSection />
-                </Section>
-                <Section id="Experience_section">
-                    <ExperienceSection />
-                </Section>
+                <div class="row">
+                    <NavBar />
+            <Section id="Home_section">
+                <HomeSection />
+            </Section>
+                        <Section id="About_section">
+                            <AboutSection />
+                        </Section>
+                        <Section id="Experience_section">
+                            <ExperienceSection />
+                        </Section>
+                        <Section id="Projects_section">
+                            <ProjectsSection />
+                        </Section>
+                </div>
             </div>
         </>
     )

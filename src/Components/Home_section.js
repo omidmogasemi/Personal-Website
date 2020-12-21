@@ -6,11 +6,14 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const HomeSection = (props) => {
   return (
     <div className="backgroundimage">
-      <div className="container-fluid p-0">
+      <div className="container-fluid p-0 backgroundimage">
         <div className={`row no-gutters align-items-center background`}>
           <div className={`col-sm-8 offset-sm-2 col-lg-10 offset-lg-1 text_container`}>
             <h1 className="typedtext">Omid Mogasemi</h1>
-            <body1 className="abouttext">Software Engineer | Founder | Do-Gooder</body1>
+            <body1 className="abouttext">Software Engineer | Founder | Do-Gooder</body1> <br /> 
+            <img src="https://img.icons8.com/windows/56/000000/email-open.png" className="spacedimages" onClick={() => window.open("mailto:omidmogasemi@gmail.com")}/>
+            <img src="https://img.icons8.com/metro/36/000000/linkedin.png" className="spacedimages" onClick={() => window.open("https://www.linkedin.com/in/omidmogasemi/")}/>
+            <img src="https://img.icons8.com/material-outlined/56/000000/github.png" onClick={() => window.open("https://github.com/omidmogasemi")}/>
           </div>
           <div className="start_button_container">
               <Link activeClass="active" to="About_section" spy={true} smooth={true} offset={-70}duration={500}>

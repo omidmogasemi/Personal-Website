@@ -1,11 +1,18 @@
-.toptext {
-  margin-top: 2rem;
-  font-size: 48px;
-  margin-bottom: 2rem;
+.experiencebackground {
+  background-color: #F9F6F0;
+  margin: 0;
+  padding: 0;
 }
 
-.projectinfo {
-  font-family: "Proxima Nova";
+.header {
+  margin-top: 3rem;
+  font-size: 2rem;
+  color: #17255A;
+}
+
+.name {
+  font-size: 3rem;
+  margin-bottom: 2rem;
 }
 
 .projectfavicons {
@@ -21,7 +28,6 @@
 }
 
 .projecttext {
-  font-family: "Proxima Nova";
   font-size: 18px;
   line-height: 24px;
 }
