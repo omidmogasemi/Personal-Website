@@ -6,7 +6,7 @@ import { Link, animateScroll as scroll } from "react-scroll";
 const HomeSection = (props) => {
   return (
     <div className="backgroundimage">
-      <div className="container-fluid p-0 backgroundimage">
+      <div className="container-fluid p-0">
         <div className={`row no-gutters align-items-center background`}>
           <div className={`col-sm-8 offset-sm-2 col-lg-10 offset-lg-1 text_container`}>
             <h1 className="typedtext">Omid Mogasemi</h1>

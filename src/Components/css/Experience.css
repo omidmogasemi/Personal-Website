@@ -1,7 +1,12 @@
+/* @media (min-width: 1440px) {
+  .container-fluid {
+    max-width: 100%;
+  }
+} */
+
 .experiencebackground {
   background-color: #F9F6F0;
-  margin: 0;
-  padding: 0;
+  max-width: 100vw;
 }
 
 .header {

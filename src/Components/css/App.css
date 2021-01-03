@@ -1,0 +1,18 @@
+.container-fluid {
+    font-family: 'Open Sans';
+  }
+  
+  @media (min-width: 1440px) {
+    .container-fluid {
+      width: 1440px;
+      max-width: 100%;
+    }
+  }
+  
+  body {
+    overflow-x: hidden;
+  }
+  
+  *:focus {
+    outline: none !important;
+  }
